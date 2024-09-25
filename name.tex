@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage{bashful}
+\begin{document}
+Size of the project:
+\bash[stdout]
+du -sh .
+\END
+
+Size of the images in project:
+\bash[stdout]
+ls -lh | sort -hr -k 5
+\END
+
+Count files in a project
+\bash[stdout]
+find . -type f | wc -l
+
+\END
+
+\end{document}
